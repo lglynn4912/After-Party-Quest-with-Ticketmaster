@@ -41,7 +41,9 @@ def find_afterparties():
     sort = request.args.get('sort', '')
 
     url = 'https://app.ticketmaster.com/discovery/v2/events'
-    payload = {'apikey': API_KEY}
+    payload = {'apikey': 'qEItvByr14Gfh5Qp5L5MLovGZNp6tHF7'}
+
+    res = requests.get(url, params=payload)
 
     # TODO: Make a request to the Event Search endpoint to search for events
     #
